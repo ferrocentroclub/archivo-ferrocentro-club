@@ -1,0 +1,108 @@
+/* Estilo General Internet Antiguo Minimalista */
+body {
+    font-family: "Courier New", Courier, monospace; /* Fuente tipográfica clásica de máquina de escribir */
+    background-color: #ffffff; /* Fondo blanco puro */
+    color: #111111;
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 800px; /* Un poco más estrecho para que sea más legible */
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #111111; /* Una simple línea negra fina debajo del título */
+    padding-bottom: 3px;
+    margin-top: 40px;
+    color: #111111;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+/* Menú de Navegación Minimalista (Sin cajas de fondo) */
+.nav-bar {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #cccccc;
+    font-size: 12px;
+}
+
+.nav-bar a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Tablas sutiles (Sin fondos de color, solo líneas finas) */
+table.tabla-retro {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+table.tabla-retro th {
+    border-bottom: 1px solid #111111;
+    text-align: left;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.tabla-retro td {
+    padding: 12px 4px;
+    border-bottom: 1px solid #eeeeee; /* Línea divisoria muy suave */
+    vertical-align: top;
+}
+
+/* Contenedor multimedia limpio */
+.media-box {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #eeeeee;
+    background: #fafafa;
+    text-align: center;
+}
+
+.media-box img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    text-align: center;
+    font-size: 11px;
+    color: #999999;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
