@@ -20,42 +20,33 @@ a:visited {
     color: #90e0ef; /* Color para los enlaces ya visitados */
 }
 
-/* Títulos en Amarillo Agradable (Tono Oro Viejo / Crema) */
+/* Títulos en Amarillo Agradable (Tamaños ampliados) */
 h1 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 22px;
+    font-size: 32px; /* <- Antes 22px. El título principal de la web ahora destaca muchísimo más */
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 5px;
-    color: #e9c46a; /* Amarillo suave, tipo oro viejo, cero chillón */
+    margin-bottom: 10px;
+    color: #e9c46a;
 }
 
 h2 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 15px;
+    font-size: 22px; /* <- Antes 15px. Las secciones principales como [LÍNEA DE TIEMPO] o [INTRODUCCIÓN] se ven grandes y claras */
     font-weight: bold;
-    border-bottom: 1px solid #e9c46a; /* Línea divisoria amarilla a juego */
-    padding-bottom: 3px;
-    margin-top: 40px;
-    color: #e9c46a; /* El mismo amarillo agradable */
-}
-
-h3 {
-    font-size: 13px;
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    border-bottom: 2px solid #e9c46a; /* Hacemos la línea de abajo un pelín más gruesa para que acompañe el tamaño */
+    padding-bottom: 6px;
+    margin-top: 50px;
     color: #e9c46a;
 }
 
-/* Ajuste sutil para las líneas de las tablas */
-table.tabla-retro th {
-    border-bottom: 1px solid #e9c46a; /* Cabecera con línea amarilla */
-    text-align: left;
-    padding: 8px 4px;
-    font-size: 12px;
+h3 {
+    font-size: 18px; /* <- Antes 13px. Ideal para los títulos de conciertos o subsecciones específicas dentro de los años */
     font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 8px;
+    color: #e9c46a;
 }
 
 table.tabla-retro td {
