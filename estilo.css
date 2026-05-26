@@ -1,23 +1,26 @@
-/* Estilo General Internet Antiguo Minimalista */
+/* Estilo General - Azul Marino, Blanco y Amarillo Cálido */
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: #ffffff;
-    color: #111111;
+    background-color: #0d1b2a; /* Azul marino oscuro profundo */
+    color: #e0e1dd; /* Blanco roto / sutil para que no deslumbre */
     margin: 40px auto;
     padding: 0 20px;
     max-width: 800px;
-    font-size: 15px; /* <- Más grande y legible */
-    line-height: 1.6; /* <- Más espacio entre líneas para que respire el texto */
+    font-size: 15px;
+    line-height: 1.6;
 }
+
+/* Enlaces adaptados al fondo oscuro */
 a {
-    color: #0000ee;
+    color: #4ea8de; /* Un azul claro/celeste para que resalte bien sobre el marino */
     text-decoration: underline;
 }
 
 a:visited {
-    color: #551a8b;
+    color: #90e0ef; /* Color para los enlaces ya visitados */
 }
 
+/* Títulos en Amarillo Agradable (Tono Oro Viejo / Crema) */
 h1 {
     font-family: "Times New Roman", Times, serif;
     font-size: 22px;
@@ -25,16 +28,17 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 5px;
+    color: #e9c46a; /* Amarillo suave, tipo oro viejo, cero chillón */
 }
 
 h2 {
     font-family: "Times New Roman", Times, serif;
     font-size: 15px;
     font-weight: bold;
-    border-bottom: 1px solid #111111; /* Una simple línea negra fina debajo del título */
+    border-bottom: 1px solid #e9c46a; /* Línea divisoria amarilla a juego */
     padding-bottom: 3px;
     margin-top: 40px;
-    color: #111111;
+    color: #e9c46a; /* El mismo amarillo agradable */
 }
 
 h3 {
@@ -42,8 +46,32 @@ h3 {
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 5px;
+    color: #e9c46a;
 }
 
+/* Ajuste sutil para las líneas de las tablas */
+table.tabla-retro th {
+    border-bottom: 1px solid #e9c46a; /* Cabecera con línea amarilla */
+    text-align: left;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table.tabla-retro td {
+    padding: 12px 4px;
+    border-bottom: 1px solid #1b263b; /* Línea divisoria interna muy discreta */
+    vertical-align: top;
+}
+
+/* Contenedor multimedia adaptado al modo oscuro */
+.media-box {
+    margin: 15px 0;
+    padding: 10px;
+    border: 1px solid #1b263b;
+    background: #14213d; /* Un azul ligeramente más claro que el fondo */
+    text-align: center;
+}
 /* Menú de Navegación Minimalista (Sin cajas de fondo) */
 .nav-bar {
     padding: 10px 0;
