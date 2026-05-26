@@ -1,15 +1,14 @@
 /* Estilo General Internet Antiguo Minimalista */
 body {
-    font-family: "Courier New", Courier, monospace; /* Fuente tipográfica clásica de máquina de escribir */
-    background-color: #ffffff; /* Fondo blanco puro */
+    font-family: "Courier New", Courier, monospace;
+    background-color: #ffffff;
     color: #111111;
     margin: 40px auto;
     padding: 0 20px;
-    max-width: 800px; /* Un poco más estrecho para que sea más legible */
-    font-size: 13px;
-    line-height: 1.5;
+    max-width: 800px;
+    font-size: 15px; /* <- Más grande y legible */
+    line-height: 1.6; /* <- Más espacio entre líneas para que respire el texto */
 }
-
 a {
     color: #0000ee;
     text-decoration: underline;
