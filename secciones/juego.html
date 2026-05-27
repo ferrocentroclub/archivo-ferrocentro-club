@@ -9,12 +9,6 @@
 
 <div class="contenedor">
 
-    <!-- Encabezado de la Sección -->
-    <div class="header-box">
-        <h1>ZONA EXTRAS</h1>
-        <div class="subtitulo">Tres en raya contra la máquina</div>
-    </div>
-
     <!-- Barra de Navegación (Ajusta las rutas según tu carpeta) -->
     <div class="nav-bar">
         <a href="../index.html">Inicio</a> / 
@@ -26,8 +20,7 @@
     <!-- Contenedor del Juego con tu paleta de colores -->
     <div class="seccion-juego" style="background-color: #0d1b2a; padding: 30px; border-radius: 8px; margin: 30px 0; font-family: sans-serif; color: #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);">
         
-        <h2 style="color: #e9c46a; margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">🕹️ El Reto de la Bitácora</h2>
-        <p style="text-align: center; color: #a0aab5; margin-bottom: 30px;">Demuestra tus habilidades retando a nuestro rival secreto en un tres en raya clásico.</p>
+        <h2 style="color: #e9c46a; margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Tres en raya contra Martín</h2>
 
         <div class="contenedor-juego" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px;">
             
@@ -35,7 +28,7 @@
             <div class="perfil-cpu" style="text-align: center; background: rgba(255,255,255,0.04); padding: 20px; border-radius: 8px; width: 190px; border: 1px solid rgba(233, 196, 106, 0.2);">
                 <!-- REEMPLAZA ESTA URL POR LA FOTO DE TU PERSONAJE -->
                 <img src="https://picsum.photos/150/150" alt="Rival" style="width: 130px; height: 130px; border-radius: 50%; border: 3px solid #e9c46a; object-fit: cover; box-shadow: 0 0 10px rgba(233,196,106,0.3);">
-                <h3 style="color: #e9c46a; margin: 15px 0 5px 0; font-size: 18px;">Rival Central</h3>
+                <h3 style="color: #e9c46a; margin: 15px 0 5px 0; font-size: 18px;">Martín</h3>
                 <p id="estado-juego" style="font-size: 13px; color: #a0aab5; margin: 0; font-weight: bold;">Tu turno (X)</p>
             </div>
 
@@ -113,7 +106,7 @@
         e.target.style.backgroundColor = '#1b263b';
         
         if (verificarGanador("X")) {
-            finalizarJuego("¡Ganaste! 🎉");
+            finalizarJuego("¡Ganaste!");
             return;
         }
 
@@ -122,7 +115,7 @@
             estadoTexto.innerText = "Pensando...";
             setTimeout(turnoCPU, 600);
         } else {
-            finalizarJuego("¡Empate! 🤝");
+            finalizarJuego("¡Empate!");
         }
     }
 
@@ -138,9 +131,9 @@
         marcarCelda(celdaObjetivo, eleccionAleatoria, "O", "#e9c46a");
 
         if (verificarGanador("O")) {
-            finalizarJuego("¡Perdiste! 💀");
+            finalizarJuego("¡Perdiste!");
         } else if (!tablero.includes("")) {
-            finalizarJuego("¡Empate! 🤝");
+            finalizarJuego("¡Empate!");
         } else {
             juegoActivo = true;
             estadoTexto.innerText = "Tu turno (X)";
