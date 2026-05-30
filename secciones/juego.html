@@ -9,7 +9,6 @@
 
 <div class="contenedor">
 
-    <!-- Barra de Navegación (Ajusta las rutas según tu carpeta) -->
     <div class="nav-bar">
         <a href="../index.html">Inicio</a> / 
         <a href="../index.html#linea-tiempo">Cronología</a> / 
@@ -17,22 +16,22 @@
         <a href="#" style="color: #e9c46a;">Minijuego</a>
     </div>
 
-    <!-- Contenedor del Juego con tu paleta de colores -->
+    
     <div class="seccion-juego" style="background-color: #0d1b2a; padding: 30px; border-radius: 8px; margin: 30px 0; font-family: sans-serif; color: #fff; box-shadow: 0px 4px 15px rgba(0,0,0,0.3);">
         
         <h2 style="color: #e9c46a; margin-top: 0; text-align: center; text-transform: uppercase; letter-spacing: 1px;">Tres en raya contra Martín</h2>
 
         <div class="contenedor-juego" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px;">
             
-            <!-- Perfil del Personaje / CPU -->
+           
             <div class="perfil-cpu" style="text-align: center; background: rgba(255,255,255,0.04); padding: 20px; border-radius: 8px; width: 190px; border: 1px solid rgba(233, 196, 106, 0.2);">
-                <!-- REEMPLAZA ESTA URL POR LA FOTO DE TU PERSONAJE -->
+                
                 <img src="https://picsum.photos/150/150" alt="Rival" style="width: 130px; height: 130px; border-radius: 50%; border: 3px solid #e9c46a; object-fit: cover; box-shadow: 0 0 10px rgba(233,196,106,0.3);">
                 <h3 style="color: #e9c46a; margin: 15px 0 5px 0; font-size: 18px;">Martín</h3>
                 <p id="estado-juego" style="font-size: 13px; color: #a0aab5; margin: 0; font-weight: bold;">Tu turno (X)</p>
             </div>
 
-            <!-- Tablero de Juego -->
+            
             <div>
                 <div id="tablero" style="display: grid; grid-template-columns: repeat(3, 85px); grid-template-rows: repeat(3, 85px); gap: 8px;">
                     <div class="celda" data-i="0" style="background-color: #1b263b; border-radius: 6px; display: flex; justify-content: center; align-items: center; font-size: 36px; font-weight: bold; color: #fff; cursor: pointer; transition: background 0.2s;"></div>
@@ -54,17 +53,17 @@
         </div>
     </div>
 
-    <!-- Enlace de retorno -->
+    
     <p><a href="../index.html">&lt;&lt; Volver a la página principal</a></p>
 
-    <!-- Pie de página -->
+   
     <div class="footer">
         ferrocentro club tu banda de confianza.
     </div>
 
 </div>
 
-<!-- LÓGICA DEL JUEGO (JAVASCRIPT) -->
+
 <script>
     const tableroElemento = document.getElementById('tablero');
     const celdas = document.querySelectorAll('.celda');
@@ -75,12 +74,11 @@
     let juegoActivo = true;
 
     const combinacionesGanadoras = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Horizontales
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Verticales
-        [0, 4, 8], [2, 4, 6]             // Diagonales
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], 
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+        [0, 4, 8], [2, 4, 6]             
     ];
 
-    // Efecto visual al pasar el ratón por encima de celdas vacías
     celdas.forEach(celda => {
         celda.addEventListener('mouseenter', () => {
             if (tablero[celda.getAttribute('data-i')] === "" && juegoActivo) {
