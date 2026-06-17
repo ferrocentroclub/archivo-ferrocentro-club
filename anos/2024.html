@@ -65,10 +65,16 @@
     Estas son algunas imágenes que describen la estética del grupo entonces así como las primeras ideas de logos.
     </p>
 
-<div class="mural-imagenes" style="margin: 20px 0;">
+<div class="mural-imagenes" style="
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+">
     <img src="https://res.cloudinary.com/ddsou3zwj/image/upload/v1781714536/ferrocentro_club_gjzssh.jpg" 
          alt="foto 1"
-         style="width: 100%; display: block;">
+         style="width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block;">
+    <!-- repite el <img> por cada foto -->
 </div>
 
     <h2>Noche Blanca en la Facultad de Pedagogía</h2>
