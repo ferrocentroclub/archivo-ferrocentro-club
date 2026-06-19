@@ -14,13 +14,12 @@
         <div class="subtitulo">De corazón</div>
     </div>
 <div class="mart">
-	<h2 style="font-family: Helvetica">
+	<h2 font-family="Helvetica">
 		Linux
 	</h2>
 	<p>
 		No merece la fama que tiene de "necesitas hackear un servidor de la nasa para leer un pdf". Es un ordenador y punto, hace lo que le pides, y es más que gratis.
 	</p>
-	<img src="https://res.cloudinary.com/ddsou3zwj/image/upload/q_auto/f_auto/v1781895407/chuj2_xta5nu.gif" style="width: 30%;">
 </div>
     <div class="nav-bar">
         <a href="../index.html">Inicio</a> / 
